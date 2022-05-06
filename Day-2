@@ -1,0 +1,19 @@
+1) Calculate Special Bonus
+
+Solution: SELECT employee_id, IF(employee_id % 2 != 0 AND name NOT LIKE 'M%', salary, 0) AS bonus
+          FROM Employees ORDER BY employee_id;
+
+
+2) Swap Salary
+
+Solution: UPDATE Salary 
+          SET
+          sex = CASE sex
+          WHEN 'f' THEN 'm'
+          ELSE 'f'
+          END;
+
+
+3) Delete Duplicate Emails
+
+Solution: DELETE FROM Person WHERE id NOT IN (SELECT id FROM( SELECT MIN(id) AS id FROM Person GROUP BY email) AS p);
