@@ -1,0 +1,10 @@
+1) Sales Person
+
+SELECT name FROM SalesPerson WHERE sales_id NOT IN(SELECT  sales_id FROM Orders)
+UNION
+SELECT name FROM SalesPerson WHERE sales_id NOT IN (SELECT sales_id FROM Orders WHERE com_id IN (SELECT com_id FROM Company WHERE name = 'RED'));
+
+
+2) Rising Temperature
+
+SELECT w1.id FROM Weather w1 JOIN Weather w2 WHERE w1.temperature > w2.temperature AND DATEDIFF(w1.recordDate, w2.recordDate) = 1;
