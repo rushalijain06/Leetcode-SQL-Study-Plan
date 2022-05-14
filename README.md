@@ -50,3 +50,8 @@ This repo will contain the solutions of 10-day SQL study plan on Leetcode.
 2) Top Travellers
 3) Market Analysis I
 
+#### Day-10
+1) Duplicate Emails
+2) Actors and Directors Who Cooperated At Least Three Times
+3) Bank Account Summary II
+4) Sales Analysis III
