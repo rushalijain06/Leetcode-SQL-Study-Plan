@@ -1,5 +1,5 @@
 # Leetcode-SQL-Study-Plan
-This repo will contain the solutions of 10-day SQL study plan on Leetcode.
+This repository contains the solutions of 10-day SQL study plan on Leetcode.
 
 ### The day-wise questions are as follows:
 
